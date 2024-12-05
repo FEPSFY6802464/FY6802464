@@ -89,6 +89,7 @@ tr:nth-child(even) {
       ‘ambient isotopies’, which disallows shrinking any part of the knot into a point in order to eliminate the knot. (Adams, 1994)
       <img src  ="Infinitely looping knot.png" alt="Infinitely looping knot" width="600" height="300">
       Figure 1. Infinitely looping “wild knot” (Murasugi, 1996)
+      <pre id =S1>
     </pre>
   </p>
 <h3 id="Knot diagrams and equivalence">Knot diagrams and equivalence</h3>
@@ -109,6 +110,7 @@ tr:nth-child(even) {
       
       <img src  ="Reidemeister moves.PNG" alt="Reidemeister moves" width="460" height="280">
        Figure 4. ‘Reidemeister moves’ (Adams et al, 2020)
+      <pre id=S2>
     </pre>
   </p>
   <h3 id="Prime knots and knot composition">Prime knots and knot composition</h3>
@@ -125,6 +127,7 @@ tr:nth-child(even) {
       <img src  ="Knot_table.png" alt="Knot_table" width="640" height="475">
        Figure 5. Knot table of prime knots 
        up to 7 crossings (Hankin, 2023)
+      <pre id=S3>
     </pre>
   </p>
   <h3 id="Links">Links</h3>
@@ -139,7 +142,7 @@ tr:nth-child(even) {
       <img src  ="Whitehead link.PNG" alt="Whitehead link" width="200" height="150">                                         <img src  ="Borromean link.PNG" alt="Borromean link" width="200" height="150">                      
        Figure 6. The ‘Whitehead link’ (Livingston, 1993)                 Figure 7. The ‘Borromean link’ (Purcell, 2020)
 
-      
+      <pre id=S4>
     </pre>
   </p>
    <h3 id="Knot invariants">Knot invariants</h3>
@@ -161,6 +164,7 @@ tr:nth-child(even) {
       the number of ‘maximal overpasses’ is called the ‘bridge number’ (Murasugi, 1996) 
       <img src  ="Unknotting number invariant.PNG" alt="Whitehead link" width="560" height="150">
        Figure 8. An ‘unknotting operation’ (Murasugi, 1996) 
+    <pre id=S5>
     </pre>
   </p>
   <h3 id="References">References</h3>
@@ -294,10 +298,15 @@ const d = new Date()
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Assumptions in knot theory");
-    const AnalysisCount = displayWordCount("Assumptions in knot theory");
+    const S1Count = displayWordCount("S1");
+    const S2Count = displayWordCount("S2");
+    const S3Count = displayWordCount("S3");
+    const S4Count = displayWordCount("S4");
+    const S5Count = displayWordCount("S5");
+
+    
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = S1 + S2 + S3 + S4 + S5;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
