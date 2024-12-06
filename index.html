@@ -72,7 +72,7 @@ tr:nth-child(even) {
 <body style="background-color:#FFFFFF;margin-left:50px;">
    <h3 id="Abstract">Abstract</h3>
   <p class="ex1">
-    <pre>
+    <pre id=S0>
       This article seeks to outline the fundamental ideas of knot theory, the topological study of mathematical knots, 
       first by explaining the basic assumptions of knot theory and then by discussing the concepts of equivalence and knot composition. 
       It will also include a brief exploration of knot invariants however due to the introductory nature of the article; an explanation 
@@ -292,15 +292,12 @@ const d = new Date()
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const S1Count = displayWordCount("S1");
-    const S2Count = displayWordCount("S2");
-    const S3Count = displayWordCount("S3");
-    const S4Count = displayWordCount("S4");
-    const S5Count = displayWordCount("S5");
+    const S1Count = displayWordCount("S0");
+
 
     
     // Calculate the sum of all selected sections
-    const totalWordCount = S1 + S2 + S3 + S4 + S5;
+    const totalWordCount = S0;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
